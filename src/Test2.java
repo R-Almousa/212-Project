@@ -20,37 +20,29 @@ public class Test2 {
         System.out.println("Get photo1 path and tags:");
         System.out.println("photo1 path: " + photo1.getPath());
 
-        //You can get the list of tags of photo1 by calling photo1.getTags().
         LinkedList<String> tags = photo1.getTags();
 
-        //You can write a method that prints the list of tags of photo1.
         System.out.println(photo1.getPath());
         printLL(tags);
 
         System.out.println("\n\nGet album1 name, condition, and photos:");
         System.out.println("album1 name: " + album1.getName());
         System.out.println("album1 condition: " + album1.getCondition());
-        //You can get the list of photos in album2 by calling album2.getPhotos().
         LinkedList<Photo> photos = album1.getPhotos();
-        //You can write a method that prints the list of photos in album2.
         System.out.println(album1.getCondition());
         printLLPhoto(photos);
 
         System.out.println("\n\nGet album2 name, condition, and photos:");
         System.out.println("album2 name: " + album2.getName());
         System.out.println("album2 condition: " + album2.getCondition());
-        //You can get the list of photos in album2 by calling album2.getPhotos().
         photos = album2.getPhotos();
-        //You can write a method that prints the list of photos in album2.
         System.out.println(album2.getCondition());
         printLLPhoto(photos);
 
         System.out.println("\n\nGet album3 name, condition, and photos:");
         System.out.println("album3 name: " + album3.getName());
         System.out.println("album3 condition: " + album3.getCondition());
-        //You can get the list of photos in album2 by calling album2.getPhotos().
         photos = album3.getPhotos();
-        //You can write a method that prints the list of photos in album2.
         System.out.println(album3.getCondition());
         printLLPhoto(photos);
 
