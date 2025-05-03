@@ -18,10 +18,9 @@ public class Test {
         System.out.println("Get photo1 path and tags:");
         System.out.println("photo1 path: " + photo1.getPath());
 
-        //You can get the list of tags of photo1 by calling photo1.getTags().
+        
         LinkedList<String> tags = photo1.getTags();
 
-        //You can write a method that prints the list of tags of photo1.
         System.out.println(photo1.getPath());
         printLL(tags);
 
@@ -29,10 +28,8 @@ public class Test {
         System.out.println("album2 name: " + album2.getName());
         System.out.println("album2 condition: " + album2.getCondition());
 
-        //You can get the list of photos in album2 by calling album2.getPhotos().
         LinkedList<Photo> photos = album2.getPhotos();
 
-        //You can write a method that prints the list of photos in album2.
         System.out.println(album2.getCondition());
         printLLPhoto(photos);
 
