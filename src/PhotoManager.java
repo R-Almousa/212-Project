@@ -1,14 +1,12 @@
 public class PhotoManager {
 
     LinkedList<Photo> photos;
-
-    // Constructor
+    
     public PhotoManager()
     {
         photos = new LinkedList<Photo>();
     }
 
-    // Add a photo
     public void addPhoto(Photo p)
     {
         if (! IsPhototAvailable(p.getPath(), photos) )
@@ -35,7 +33,6 @@ public class PhotoManager {
         return false;
     }
 
-    // Delete a photo
     public void deletePhoto(String path)
     {
         if (! this.IsPhototAvailable(path, photos))
@@ -69,7 +66,6 @@ public class PhotoManager {
         }
     }
 
-    // Return all managed photos
     public LinkedList<Photo>  getPhotos()
     {
         return photos;
