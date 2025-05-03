@@ -50,7 +50,7 @@ public class Album {
             String[] Array = condition.split(" AND ");
 
             Rphotos.findFirst();
-            while (!Rphotos.last()) // Changed for loop to while loop
+            while (!Rphotos.last())
             {
                 Photo photo = Rphotos.retrieve();
                 if (!allAvilable(photo.allTags, Array))
@@ -78,13 +78,13 @@ public class Album {
         else
         {
             int i = 0;
-            while (i < Array.length && continue1) // Changed for loop to while loop
+            while (i < Array.length && continue1)
             {
                 boolean found_in_tags = false;
 
                 AllTags.findFirst();
 
-                while (!AllTags.last()) // Changed for loop to while loop
+                while (!AllTags.last())
                 {
                     this.NbComps++;
                     if (AllTags.retrieve().compareToIgnoreCase(Array[i]) == 0)
@@ -103,7 +103,7 @@ public class Album {
                 if (!found_in_tags)
                     continue1 = false;
 
-                i++; // incrementing manually for while loop
+                i++;
             }
         }
         return continue1;
